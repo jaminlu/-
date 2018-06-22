@@ -12,7 +12,7 @@ BASE=$(cd `dirname $0`;pwd)
 function init_yum() 
 {
         yum clean all \
-        && wget -O - http://xnet.yum.sandai.net/yum.sh | sh \
+        && wget -O - http://yum.xxx.net/yum.sh | sh \
         && yum makecache \
         && yum -y install pciutils \
         && yum -y install libudev-devel \
