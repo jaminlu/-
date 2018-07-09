@@ -43,7 +43,7 @@ class calc_counter(object):
                         qat_count_status = {
                             "endpoint": ENDPOINT,
                             "metric": "qat.counter.total",
-                            "tag": "request AE=%s" % m[0][0],
+                            "tags": "request AE=%s" % m[0][0],
                             "timestamp": TS,
                             "value":  m[0][1],
                             "step": step,
@@ -54,7 +54,7 @@ class calc_counter(object):
                         qat_count_status = {
                             "endpoint": ENDPOINT,
                             "metric": "qat.counter.total",
-                            "tag": "response AE=%s" % m[0][0],
+                            "tags": "response AE=%s" % m[0][0],
                             "timestamp": TS,
                             "value":  m[0][1],
                             "step": step,
